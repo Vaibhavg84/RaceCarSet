@@ -41,59 +41,43 @@ Car Lap Fuel Consumption: 5
 
 -------------------------------------------------------------------------
 Car Rank: 3
+
 Car Race Completion Time: 1809
+
 Car Details: -----
+
 Car Fuel Capacity: 151
+
 Car Lap Completion Time: 36
+
 Car Lap Fuel Consumption: 8
--------------------------------------------------------------------------
-Car Rank: 4
-Car Race Completion Time: 2306
-Car Details: -----
-Car Fuel Capacity: 276
-Car Lap Completion Time: 46
-Car Lap Fuel Consumption: 9
--------------------------------------------------------------------------
-Car Rank: 5
-Car Race Completion Time: 2309
-Car Details: -----
-Car Fuel Capacity: 156
-Car Lap Completion Time: 46
-Car Lap Fuel Consumption: 9
--------------------------------------------------------------------------
-Car Rank: 6
-Car Race Completion Time: 3109
-Car Details: -----
-Car Fuel Capacity: 159
-Car Lap Completion Time: 62
-Car Lap Fuel Consumption: 8
--------------------------------------------------------------------------
-Car Rank: 7
-Car Race Completion Time: 3203
-Car Details: -----
-Car Fuel Capacity: 164
-Car Lap Completion Time: 64
-Car Lap Fuel Consumption: 3
--------------------------------------------------------------------------
-Car Rank: 8
-Car Race Completion Time: 3356
-Car Details: -----
-Car Fuel Capacity: 254
-Car Lap Completion Time: 67
-Car Lap Fuel Consumption: 9
--------------------------------------------------------------------------
-Car Rank: 9
-Car Race Completion Time: 3606
-Car Details: -----
-Car Fuel Capacity: 241
-Car Lap Completion Time: 72
-Car Lap Fuel Consumption: 8
--------------------------------------------------------------------------
-Car Rank: 10
-Car Race Completion Time: 3706
-Car Details: -----
-Car Fuel Capacity: 249
-Car Lap Completion Time: 74
-Car Lap Fuel Consumption: 5
+
 -------------------------------------------------------------------------
 
+Car Rank: 4
+
+Car Race Completion Time: 2306
+
+Car Details: -----
+
+Car Fuel Capacity: 276
+
+Car Lap Completion Time: 46
+
+Car Lap Fuel Consumption: 9
+
+-------------------------------------------------------------------------
+
+Car Rank: 5
+
+Car Race Completion Time: 2309
+
+Car Details: -----
+
+Car Fuel Capacity: 156
+
+Car Lap Completion Time: 46
+
+Car Lap Fuel Consumption: 9
+
+-------------------------------------------------------------------------
