@@ -14,9 +14,12 @@ foreach(RaceSetUpLibary.RaceCarRankDetails carDetails in Response)
     Console.WriteLine("Car Rank: " + carDetails.Rank.ToString());
     Console.WriteLine("Car Race Completion Time: " + carDetails.RaceCompletionTime.ToString());
     Console.WriteLine("Car Details: -----");
-    Console.WriteLine("Car Fuel Capacity: " + carDetails.RaceCarConfiguration.FuelCapacity.ToString());
-    Console.WriteLine("Car Lap Completion Time: " + carDetails.RaceCarConfiguration.OneLapCompletionTime.ToString());
-    Console.WriteLine("Car Lap Fuel Consumption: " + carDetails.RaceCarConfiguration.OneLapFuelConsumption.ToString());
+    if (carDetails.RaceCarConfiguration != null)
+    {
+        Console.WriteLine("Car Fuel Capacity: " + carDetails.RaceCarConfiguration.FuelCapacity.ToString());
+        Console.WriteLine("Car Lap Completion Time: " + carDetails.RaceCarConfiguration.OneLapCompletionTime.ToString());
+        Console.WriteLine("Car Lap Fuel Consumption: " + carDetails.RaceCarConfiguration.OneLapFuelConsumption.ToString());
+    }
     Console.WriteLine("-------------------------------------------------------------------------");
 }
 

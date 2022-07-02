@@ -16,7 +16,7 @@
                 {
                     raceCompletionTime = -1;
                 }
-                else if (_raceTrackConfiguration == null) // if Track Configuration not input by user then taking constant values
+                else if (_raceTrackConfiguration == null || _raceTrackConfiguration.NoOfLaps == -100) // if Track Configuration not input by user then taking constant values
                 {
                     fuelRequired = Constants.NoOfLaps * _raceCarConfiguration.OneLapFuelConsumption;
                     totalPitStopRequired = Convert.ToDouble(Math.Ceiling(Convert.ToDecimal(fuelRequired / _raceCarConfiguration.FuelCapacity)));
@@ -34,7 +34,7 @@
 
             return raceCompletionTime;
         }
-        public List<RaceCarRankDetails> SetCarRanks(List<RaceCarConfiguration> raceCarConfigurations, RaceTrackConfiguration _raceTrackConfiguration = null)
+        public List<RaceCarRankDetails> SetCarRanks(List<RaceCarConfiguration> raceCarConfigurations, RaceTrackConfiguration? _raceTrackConfiguration = null)
         {
             seed = 0;
             List<RaceCarRankDetails> SortedList = new List<RaceCarRankDetails>();
@@ -47,6 +47,11 @@
                     carDetails.RaceCarConfiguration = rcc;
                     try
                     {
+                        if(_raceTrackConfiguration == null)
+                        {
+                            _raceTrackConfiguration = new RaceTrackConfiguration();
+                            _raceTrackConfiguration.NoOfLaps = -100;
+                        }
                         carDetails.RaceCompletionTime = CalculateRaceCompletionTime(rcc, _raceTrackConfiguration);
                         if(carDetails.RaceCompletionTime == -1)
                         {

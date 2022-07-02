@@ -11,9 +11,11 @@ namespace RaceTestProject
     public class UnitTestCarSet
     {       
         public ICarSetUp iRaceCar;
+        public ICarDummyConfiguration iCarConfig;
         public UnitTestCarSet()
         {            
             iRaceCar = new RaceCarSetup();
+            iCarConfig = new RaceCarConfiguration();
         }
         [TestMethod]
         [Description("Test if no input given to the method")]
@@ -48,7 +50,7 @@ namespace RaceTestProject
 
             var response1 = carSetUp.SetCarRanks(raceCarConfigurations);  
 
-            Assert.AreEqual(response1[0].RaceCompletionTime, 1506);
+            Assert.AreEqual(1506, response1[0].RaceCompletionTime);
         }
         [TestMethod]
         [Description("Test to validate first rank")]
@@ -63,7 +65,7 @@ namespace RaceTestProject
             mockCarSetUp.Setup(a => a.DummyObjects()).Returns(new RaceCarConfiguration() { FuelCapacity = 200, OneLapFuelConsumption = 4, OneLapCompletionTime = 30 });
             raceCarConfigurations.Add(mockCarSetUp.Object.DummyObjects());            
             var response = iRaceCar.SetCarRanks(raceCarConfigurations);            
-            Assert.AreEqual(response[0].Rank, 1);
+            Assert.AreEqual(1, response[0].Rank);
         }
         [TestMethod]
         [Description("Test to validate second rank")]
@@ -79,8 +81,16 @@ namespace RaceTestProject
             raceCarConfigurations.Add(mockCarSetUp.Object.DummyObjects());
             var response = iRaceCar.SetCarRanks(raceCarConfigurations);
 
-            Assert.AreEqual(response[1].Rank, 2);
+            Assert.AreEqual(2, response[1].Rank);
         }
-        
+        [TestMethod]
+        [Description("Test to validate Dummy Configs")]
+        public void Test_ValidateDummuConfigurations()
+        {
+            var response = iCarConfig.DummyObjects();
+
+            Assert.IsNotNull(response);
+        }
+
     }
 }
