@@ -8,6 +8,6 @@ namespace RaceSetUpLibary
 {
     public interface ICarSetUp
     {
-        List<RaceCarRankDetails> SetCarRanks(List<RaceCarConfiguration> raceCarConfigurations, RaceTrackConfiguration _raceTrackConfiguration = null);
+        List<RaceCarRankDetails> SetCarRanks(List<RaceCarConfiguration> raceCarConfigurations, RaceTrackConfiguration? _raceTrackConfiguration = null);
     }
 }

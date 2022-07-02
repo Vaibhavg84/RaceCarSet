@@ -12,7 +12,7 @@
         public RaceCarConfiguration DummyObjects()
         {
             RaceCarConfiguration obj = new RaceCarConfiguration();
-            Random ran = new Random();
+            Random ran = new ();
             obj.FuelCapacity = ran.Next(150, 300);
             obj.OneLapFuelConsumption = ran.Next(3, 10);
             obj.OneLapCompletionTime = ran.Next(30, 90);

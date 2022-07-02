@@ -1,6 +1,6 @@
 ﻿namespace RaceSetUpLibary
 {
-    public class Constants
+    public static class Constants
     {
         public const double LapDistance = 7.00;  // 7 KM
         public const double NoOfLaps = 50.00;  // 50 Rounds

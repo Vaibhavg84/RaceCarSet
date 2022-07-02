@@ -3,13 +3,13 @@
     public class RaceCarSetup : ICarSetUp
     {
         int seed = 0;
-        double raceCompletionTime = 0;
-        double fuelRequired = 0;
-        double totalPitStopRequired = 0;
-        double pistStopTime = 0;
+      
         private double CalculateRaceCompletionTime(RaceCarConfiguration _raceCarConfiguration, RaceTrackConfiguration _raceTrackConfiguration)
         {
-
+            double raceCompletionTime = 0;
+            double fuelRequired = 0;
+            double totalPitStopRequired = 0;
+            double pistStopTime = 0;
             if (_raceCarConfiguration != null)
             {
                 if(_raceCarConfiguration.FuelCapacity <= 0 || _raceCarConfiguration.OneLapFuelConsumption <= 0)
