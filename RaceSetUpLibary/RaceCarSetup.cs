@@ -3,8 +3,8 @@
     public class RaceCarSetup : ICarSetUp
     {
         int seed = 0;
-      
-        private double CalculateRaceCompletionTime(RaceCarConfiguration _raceCarConfiguration, RaceTrackConfiguration _raceTrackConfiguration)
+       
+        private static double CalculateRaceCompletionTime(RaceCarConfiguration _raceCarConfiguration, RaceTrackConfiguration _raceTrackConfiguration)
         {
             double raceCompletionTime = 0;
             double fuelRequired = 0;
