@@ -13,11 +13,17 @@ Race Solution consist fo 3 Projects.
  
  
 Car Rank: 1
+
 Car Race Completion Time: 1509
+
 Car Details: -----
+
 Car Fuel Capacity: 189
+
 Car Lap Completion Time: 30
+
 Car Lap Fuel Consumption: 8
+
 
 -------------------------------------------------------------------------
 Car Rank: 2
