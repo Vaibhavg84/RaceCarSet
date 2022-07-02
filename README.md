@@ -26,12 +26,19 @@ Car Lap Fuel Consumption: 8
 
 
 -------------------------------------------------------------------------
+
 Car Rank: 2
+
 Car Race Completion Time: 1603
+
 Car Details: -----
+
 Car Fuel Capacity: 258
+
 Car Lap Completion Time: 32
+
 Car Lap Fuel Consumption: 5
+
 -------------------------------------------------------------------------
 Car Rank: 3
 Car Race Completion Time: 1809
