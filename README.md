@@ -1,5 +1,5 @@
 # Race Car SetUp 
- ## _Technical Arctiture_
+ ## _Technical Architecture_
 
 [![N|Solid](https://www.secret-source.eu/wp-content/uploads/2017/11/microsoft-net-logo.jpg)](https://nodesource.com/products/nsolid)
 ```sh
@@ -21,13 +21,13 @@ SonarQube Integration for Code Analysis.
 ## Sonar Qube Code Analysis Report
 
 
-| Tool | Descrption |
+| Tool | Description |
 | ------ | ------ |
 | Code Coverage | 80% |
 | Vulnerabilities  | Rating A |
 | Code Smells | No Issues  |
 | Security Hotspot | No Issues - Rating A |
-| Reliablity | Rating A |
+| Reliability | Rating A |
 | Maintainability | Rating A |
 
 ## Console Output
